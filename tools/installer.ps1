@@ -110,7 +110,7 @@ try {
         if ($Mode -eq 'resize' -and $Manifest.Version -ne $package.Version) { throw 'เวอร์ชันแพ็กไม่ตรงกับแพ็กที่ติดตั้งไว้' }
         if ($Mode -eq 'update') {
             if (-not $Manifest.PSObject.Properties['Layout'] -or $Manifest.Layout -ne 'root-and-sp26-v1') { throw 'แพ็กเดิมใช้โครงสร้างติดตั้งต่างกัน กรุณาถอนแพ็กเดิมแล้วใช้ install.bat' }
-            if ($Manifest.Version -notin @($package.Version,'3.1-dev','4.0-dev')) { throw 'เวอร์ชันแพ็กเดิมยังไม่รองรับการอัปเดตโดยตรง กรุณาถอนแล้วติดตั้งใหม่' }
+            if ($Manifest.Version -notin @($package.Version,'0.1.0-alpha.1','3.1-dev','4.0-dev')) { throw 'เวอร์ชันแพ็กเดิมยังไม่รองรับการอัปเดตโดยตรง กรุณาถอนแล้วติดตั้งใหม่' }
             foreach ($entry in $Manifest.Entries) {
                 if ($entry.Id -notmatch '/trdata2\.bin$' -and $entry.InstalledHash) {
                     $name = Split-Path -Leaf (Resolve-Target $entry.Id)
