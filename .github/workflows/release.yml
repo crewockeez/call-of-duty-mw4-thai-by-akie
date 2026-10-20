@@ -1,0 +1,30 @@
+name: Release alpha
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag must equal v followed by project.json version
+        required: true
+        default: v0.1.0-alpha.1
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: windows-latest
+    env:
+      RELEASE_TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check tag matches project version
+        run: python -c "import json,os; expected='v'+json.load(open('project.json',encoding='utf-8'))['version']; assert os.environ['RELEASE_TAG']==expected, 'Tag/version mismatch'"
+      - run: python tools/build.py
+      - run: python -m unittest discover -s tests -v
+      - name: Publish prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $releaseAssets = Get-ChildItem -LiteralPath dist -File | Select-Object -ExpandProperty FullName
+          gh release create "$env:RELEASE_TAG" --target "$env:GITHUB_SHA" --prerelease --title "AKIE Thai $env:RELEASE_TAG" --notes-file docs/RELEASE_NOTES.md $releaseAssets
