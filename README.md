@@ -46,12 +46,11 @@ python -m unittest discover -s tests -v
 ## เครดิตและใบอนุญาต
 
 - ผู้ดูแลและพัฒนาซับไทย: **AKIE และผู้ร่วมโครงการ**
-- ฐานรูปแบบตาราง/คีย์และข้อมูลอ้างอิง: [e3ang / call-of-duty-mw4-persian-farsi](https://github.com/e3ang/call-of-duty-mw4-persian-farsi)
 - ตัวโหลดภายนอกมีที่มาจากผู้สร้างแพ็กตุรกี ตามเครดิตของโปรเจกต์ต้นทาง ไม่ได้อ้างว่าเป็นผลงานของ AKIE
 - ซอร์สและส่วนที่โครงการมีสิทธิ์ให้อนุญาตใช้ MIT โดยเก็บ [ใบอนุญาตต้นทาง](LICENSES/upstream-farsi-MIT.txt) ไว้ ดูขอบเขตใน [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
 
 โปรเจกต์แฟนเมด ไม่ได้เป็นผลิตภัณฑ์หรือได้รับการรับรองจาก Activision / Infinity Ward ข้อความอังกฤษและเครื่องหมายการค้าเป็นของเจ้าของสิทธิ์
 
----
+[ดูหนัง](https://tidnung.com)
 
 **English:** Thai campaign localization by AKIE. Work in progress, with 6,446 lookup entries; full campaign coverage and in-game compatibility are not yet verified. Public downloads exclude third-party hook binaries. Users supply a supported loader locally. Upstream credits and license notices are preserved.
