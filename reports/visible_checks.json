@@ -1,0 +1,97 @@
+{
+  "cases": [
+    {
+      "index": 30723,
+      "en": "Fish that smells like piss",
+      "expected_th": "ปลาที่เหม็นเหมือนฉี่"
+    },
+    {
+      "index": 26406,
+      "en": "[Lie] Yes, Sushi",
+      "expected_th": "[โกหก] ใช่ ซูชิ"
+    },
+    {
+      "index": 23837,
+      "en": "No Response",
+      "expected_th": "ไม่ตอบ"
+    },
+    {
+      "index": 31631,
+      "en": "[We’ll be quick, I promise.]",
+      "expected_th": "[เราจะรีบ ฉันสัญญา]"
+    },
+    {
+      "index": 31678,
+      "en": "[That smell won’t come out!]",
+      "expected_th": "[กลิ่นนั้นไม่หายหรอก!]"
+    },
+    {
+      "index": 35853,
+      "en": "[Maybe if you weren’t dressed like a one-man army...]",
+      "expected_th": "[ถ้านายไม่ได้แต่งตัวเหมือนกองทัพคนเดียว...]"
+    },
+    {
+      "index": 34689,
+      "en": "[We’re very sorry. It won’t happen again.]",
+      "expected_th": "[พวกเราขอโทษจริง ๆ จะไม่เกิดขึ้นอีก]"
+    },
+    {
+      "index": 25163,
+      "en": "[Oh, damn it.]",
+      "expected_th": "[โอ้ ให้ตายสิ]"
+    },
+    {
+      "index": 32999,
+      "en": "[Why? We’re your best customers!]",
+      "expected_th": "[ทำไมล่ะ? พวกเราเป็นลูกค้าชั้นดีนะ!]"
+    },
+    {
+      "index": 37989,
+      "en": "[Hey, Private Park.] They want to haze the newbie pretty hard. Grab some stomach medicine and maybe some ramen for him, ya?",
+      "expected_th": "[เฮ้ พลทหารพัค] พวกนั้นจะแกล้งน้องใหม่หนัก ไปเอายาแก้ปวดท้องกับราเม็งให้หน่อย"
+    },
+    {
+      "index": 31992,
+      "en": "[Oh no! Get out! All of you!]",
+      "expected_th": "[ไม่นะ! ออกไป! ทุกคนออกไป!]"
+    },
+    {
+      "index": 29636,
+      "en": "[Hyung. Let me listen.]",
+      "expected_th": "[ฮยอง ขอฉันฟังหน่อย]"
+    },
+    {
+      "index": 23883,
+      "en": "[What the-]",
+      "expected_th": "[อะไรวะ-]"
+    },
+    {
+      "index": 30384,
+      "en": "Okay, make it fast, guys.",
+      "expected_th": "โอเค รีบหน่อยนะทุกคน"
+    },
+    {
+      "index": 35880,
+      "en": "Oh, hey, Park, can you tell me what the hell this is?",
+      "expected_th": "อ้อ เฮ้ พัค บอกหน่อยสิว่านี่มันอะไรวะ?"
+    },
+    {
+      "index": 26737,
+      "en": "Park, think fast!",
+      "expected_th": "พัค รับให้ทันนะ!"
+    },
+    {
+      "index": 34288,
+      "en": "Oh, shit. Your spidey-sense is tingling.",
+      "expected_th": "เชี่ย สัมผัสแมงมุมของนายทำงานแล้วสินะ"
+    },
+    {
+      "index": null,
+      "en": "Cpl. Dunn",
+      "expected_th": "สิบโทดันน์"
+    }
+  ],
+  "count": 18,
+  "runtime_verified": false,
+  "note": "Screenshot text matched to source or visible name label; static probes do not prove lookup interception."
+}
