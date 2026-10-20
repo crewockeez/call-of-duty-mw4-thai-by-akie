@@ -89,9 +89,29 @@
       "index": null,
       "en": "Cpl. Dunn",
       "expected_th": "สิบโทดันน์"
+    },
+    {
+      "index": 28901,
+      "en": "Oh yeah, good memory.",
+      "expected_th": "อ้อ ใช่ จำแม่นนี่"
+    },
+    {
+      "index": 34867,
+      "en": "We're supposed to get something else, right?",
+      "expected_th": "เราต้องซื้ออย่างอื่นด้วยใช่ไหม?"
+    },
+    {
+      "index": 37370,
+      "en": "Yeah, you got that right. Buddy’s gonna be stuck on the latrine for at least a week.",
+      "expected_th": "เออ ถูกเลย หมอนั่นคงติดอยู่ในส้วมอย่างน้อยอาทิตย์หนึ่ง"
+    },
+    {
+      "index": null,
+      "en": "Pvt. Cho",
+      "expected_th": "พลทหารโช"
     }
   ],
-  "count": 18,
+  "count": 22,
   "runtime_verified": false,
   "note": "Screenshot text matched to source or visible name label; static probes do not prove lookup interception."
 }
