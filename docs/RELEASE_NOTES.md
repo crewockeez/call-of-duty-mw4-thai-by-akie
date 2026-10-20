@@ -1,8 +1,12 @@
-Call of Duty MW4 Thai by AKIE — first alpha.
+Call of Duty MW4 Thai by AKIE — 0.1.0-alpha.2
 
-- 6,446 lookup entries for Thai dialogue, choices and speaker labels.
-- Folder-picker installer, backups, uninstall, size variants and diagnostics.
-- Public package excludes third-party hook binaries; users supply a supported local runtime.
-- Upstream credits and MIT notices preserved.
+แก้ซับอังกฤษตกหล่นจากภาพล่าสุด: บทพูดของดันน์ 3 ประโยคและชื่อ `Pvt. Cho`
 
-**Work in progress. Not a 100% campaign translation. Full linguistic review, mission coverage and in-game compatibility are not verified.**
+- เพิ่มบทพูดตรงคีย์ 89 รายการ และชื่อพร้อมยศ 2 รายการ รวม 6,537 คีย์
+- เพิ่มบทพูดสั้นที่เรียกพัคและบทสนทนาในร้านค้า คำแปลใหม่ยังต้องตรวจบริบท
+- ดาวน์โหลดไฟล์ `-data.zip` แล้วแตกทั้งโฟลเดอร์
+- ถ้าใช้ alpha.1 ให้ปิดเกมแล้วเปิด `update.bat` จากโฟลเดอร์ alpha.2 เพื่อเลือกโฟลเดอร์เกม ข้อมูลสำรองเดิมและขนาดซับจะถูกเก็บไว้
+- ถ้าใช้แพ็ก v3/v4 เดิม ให้ถอนด้วยตัวถอนของแพ็กเดิมก่อน แล้วทำตามคู่มือติดตั้ง
+- แพ็กสาธารณะไม่แนบตัวโหลดภายนอก การติดตั้งครั้งแรกต้องเตรียมไฟล์ตาม README
+
+**ยังไม่ครบเนื้อเรื่อง 100% และยังไม่ได้ยืนยันข้อความใหม่ในเกมจริงครบทุกฉาก**
