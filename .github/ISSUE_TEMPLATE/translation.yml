@@ -1,0 +1,28 @@
+name: ซับอังกฤษหรือคำแปลผิด
+description: แจ้งข้อความที่ยังไม่แปล คำแปลผิด หรือชื่อไม่สม่ำเสมอ
+title: "[Translation] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: รุ่นแพ็กและรุ่นเกม
+      placeholder: "0.1.0-alpha.1 / game build"
+    validations:
+      required: true
+  - type: input
+    id: mission
+    attributes:
+      label: ภารกิจและฉาก
+    validations:
+      required: true
+  - type: textarea
+    id: original
+    attributes:
+      label: ข้อความอังกฤษและผู้พูด
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: ภาพหรือเวลาของฉาก และคำแปลที่เสนอ
+      description: ลบข้อมูลส่วนตัวก่อนแนบภาพหรือ log

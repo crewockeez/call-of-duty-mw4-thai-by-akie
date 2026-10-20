@@ -1,0 +1,21 @@
+name: ปัญหาติดตั้งหรือแสดงผล
+description: ไฟล์ไม่โหลด อักษรเป็นสี่เหลี่ยม วรรณยุกต์ หรือการตัดบรรทัด
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: รุ่นแพ็ก รุ่นเกม และแพลตฟอร์ม
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: ขั้นตอนเกิดปัญหา ผลที่เห็น และผลที่คาดหวัง
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: ภาพหรือส่วนของรายงานตรวจที่เกี่ยวข้อง
+      description: อย่าแนบไฟล์ DLL หรือ credentials และลบพาธส่วนตัวจากรายงานก่อนโพสต์
