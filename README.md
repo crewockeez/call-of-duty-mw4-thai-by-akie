@@ -1,5 +1,10 @@
 # Call of Duty MW4 Thai by AKIE
 
+<img width="3840" height="2160" alt="sp26-cod_01HHX1iUhM" src="https://github.com/user-attachments/assets/3f94f761-5f3d-4541-a3f0-69a33bde85ef" />
+<img width="3840" height="2160" alt="sp26-cod_PQtySP6dNm" src="https://github.com/user-attachments/assets/c0043f85-2b89-4e79-a426-4bb7ae81462c" />
+<img width="3840" height="2160" alt="sp26-cod_NxjcyXJgh3" src="https://github.com/user-attachments/assets/104b8faf-47da-4fd2-928e-fc6b6f6250a2" />
+<img width="3840" height="2160" alt="sp26-cod_SBySEyhJuO" src="https://github.com/user-attachments/assets/daf63841-e083-4f7e-a726-d73ea2eec110" />
+
 โปรเจกต์ซับไทยสำหรับแคมเปญ **Call of Duty: Modern Warfare 4 (2026)** ดูแลโดย **AKIE**
 
 **สถานะ: รุ่นทดลอง `0.1.0-alpha.1` — ยังไม่ครบแคมเปญ 100%** มีคำแทนที่ 6,446 คีย์ รวมบทพูด ตัวเลือกตอบ และชื่อผู้พูด จำนวนคีย์ไม่ใช่เปอร์เซ็นต์ความคืบหน้าของเนื้อเรื่อง คำแปลยังต้องตรวจบริบทและทดสอบครบทุกภารกิจ
