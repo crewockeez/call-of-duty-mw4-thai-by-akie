@@ -6444,3 +6444,94 @@
 {"en": "Ko Jin-Hyuk", "th": "โคจินฮยอก", "render": "ui", "status": "draft", "origin": "thai_speaker_name", "source": "speaker_names_th.json"}
 {"en": "Ri Ju-Young", "th": "รีจูยอง", "render": "ui", "status": "draft", "origin": "thai_speaker_name", "source": "speaker_names_th.json"}
 {"en": "Ri Seung-ho", "th": "รีซึงโฮ", "render": "ui", "status": "draft", "origin": "thai_speaker_name", "source": "speaker_names_th.json"}
+{"en": "Jump, Park.", "th": "กระโดดเลย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "23889"}
+{"en": "Park, on me.", "th": "พัค ตามฉันมา", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24139"}
+{"en": "On me, Park!", "th": "ตามฉันมา พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24333"}
+{"en": "Park, catch!", "th": "พัค รับไว้!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24346"}
+{"en": "C’mon, Park!", "th": "มาเร็ว พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24349"}
+{"en": "C’mon, Park.", "th": "มาเร็ว พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24505"}
+{"en": "On me, Park.", "th": "ตามฉันมา พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24516"}
+{"en": "On you, Park.", "th": "ตามนายไป พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24616"}
+{"en": "Got you, Park.", "th": "จับนายไว้แล้ว พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "24977"}
+{"en": "Park, keep up.", "th": "พัค ตามให้ทัน", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25097"}
+{"en": "Park, move up!", "th": "พัค รุกขึ้นไป!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25100"}
+{"en": "All you, Park.", "th": "จัดการเลย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25136"}
+{"en": "Park, up here.", "th": "พัค ขึ้นมานี่", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25268"}
+{"en": "Not bad, Park.", "th": "ไม่เลวเลย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25271"}
+{"en": "Come on, Park!", "th": "มาเร็ว พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25278"}
+{"en": "Park, hook up.", "th": "พัค เกี่ยวสายไว้", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25402"}
+{"en": "Dive in, Park.", "th": "พัค ดำลงไปเลย", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25429"}
+{"en": "Heads up, Park!", "th": "ระวัง พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25543"}
+{"en": "Park, rally up.", "th": "พัค มารวมพล", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25609"}
+{"en": "Park, stay low!", "th": "พัค หมอบต่ำไว้!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25619"}
+{"en": "Good hit, Park.", "th": "ยิงโดนสวย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25638"}
+{"en": "Range up, Park.", "th": "เพิ่มระยะยิง พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25640"}
+{"en": "Park, get down!", "th": "พัค หมอบลง!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25708"}
+{"en": "Park, this way.", "th": "พัค ทางนี้", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25729"}
+{"en": "This way, Park.", "th": "ทางนี้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25760"}
+{"en": "Hell yeah, Park.", "th": "เยี่ยมเลยว่ะ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25940"}
+{"en": "Park, you okay?!", "th": "พัค เป็นอะไรไหม?!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25963"}
+{"en": "Good shot, Park.", "th": "ยิงสวย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25969"}
+{"en": "Park, you good?!", "th": "พัค ไหวไหม?!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25972"}
+{"en": "Over here, Park!", "th": "ทางนี้ พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "25980"}
+{"en": "Park, the ledge!", "th": "พัค ตรงขอบนั่น!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26115"}
+{"en": "Well done, Park.", "th": "ทำได้ดี พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26119"}
+{"en": "Good guns, Park.", "th": "ยิงได้ดี พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26204"}
+{"en": "Good shit, Park!", "th": "โคตรเจ๋ง พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26224"}
+{"en": "Over here, Park.", "th": "ทางนี้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26225"}
+{"en": "Wrong way, Park.", "th": "ผิดทางแล้ว พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26323"}
+{"en": "Good shit, Park.", "th": "โคตรเจ๋ง พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26374"}
+{"en": "Keep it up, Park.", "th": "ทำต่อไป พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26486"}
+{"en": "Park, check fire!", "th": "พัค หยุดยิง!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26521"}
+{"en": "Park, time to go.", "th": "พัค ได้เวลาไปแล้ว", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26534"}
+{"en": "Clean shot, Park.", "th": "ยิงได้เฉียบ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26539"}
+{"en": "Park, it saw you!", "th": "พัค มันเห็นนายแล้ว!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26569"}
+{"en": "God damnit, Park.", "th": "ให้ตายสิวะ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26572"}
+{"en": "Park! Check fire!", "th": "พัค! หยุดยิง!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26703"}
+{"en": "Good shots, Park!", "th": "ยิงได้ดี พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26772"}
+{"en": "You missed, Park!", "th": "นายยิงพลาด พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26820"}
+{"en": "Lights off, Park.", "th": "ปิดไฟ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26871"}
+{"en": "Park, follow him.", "th": "พัค ตามเขาไป", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26878"}
+{"en": "Good shots, Park.", "th": "ยิงได้ดี พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26888"}
+{"en": "Missed ‘em, Park.", "th": "ยิงพลาดแล้ว พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26896"}
+{"en": "Range left, Park.", "th": "ปรับไปทางซ้าย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26916"}
+{"en": "Range down, Park.", "th": "ลดระยะยิง พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "26917"}
+{"en": "Get up here, Park!", "th": "ขึ้นมานี่ พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27037"}
+{"en": "Park, head up top.", "th": "พัค ขึ้นไปข้างบน", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27127"}
+{"en": "Jump for it, Park.", "th": "กระโดดไปเลย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27141"}
+{"en": "Stay on ‘em, Park.", "th": "เกาะพวกมันไว้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27356"}
+{"en": "Nice wheels, Park.", "th": "รถสวยนี่ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27412"}
+{"en": "Check right, Park.", "th": "ดูทางขวา พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27434"}
+{"en": "Weapons free, Park!", "th": "ยิงได้ตามสะดวก พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27527"}
+{"en": "Pay the lady, Park.", "th": "จ่ายเงินให้เธอด้วย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27577"}
+{"en": "Park, fuckin’ hide.", "th": "พัค รีบซ่อนตัวสิวะ", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27612"}
+{"en": "Park, get up there.", "th": "พัค ขึ้นไปบนนั้น", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27616"}
+{"en": "Hey Park, this way.", "th": "เฮ้ พัค ทางนี้", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27688"}
+{"en": "Get that RPG, Park!", "th": "หยิบอาร์พีจีนั่น พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27691"}
+{"en": "On your left, Park!", "th": "ทางซ้ายนาย พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27702"}
+{"en": "Park, get to cover!", "th": "พัค เข้าที่กำบัง!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27710"}
+{"en": "Take it down, Park!", "th": "จัดการมัน พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27720"}
+{"en": "Light ‘em up, Park.", "th": "ยิงถล่มพวกมัน พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27792"}
+{"en": "Hit it again, Park!", "th": "ยิงมันอีกที พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27810"}
+{"en": "Not a chance, Park.", "th": "ไม่มีทางหรอก พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27858"}
+{"en": "Park, weapons free.", "th": "พัค ยิงได้ตามสะดวก", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27864"}
+{"en": "No juice yet, Park.", "th": "ยังไม่มีไฟ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27874"}
+{"en": "Take ‘em out, Park!", "th": "จัดการพวกมัน พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27988"}
+{"en": "Stay with us, Park.", "th": "อยู่กับพวกเราไว้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "27999"}
+{"en": "Nice shootin’, Park.", "th": "ยิงสวย พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28017"}
+{"en": "Clear ‘em out, Park!", "th": "กวาดพวกมันให้หมด พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28090"}
+{"en": "Park! Grab that RPG!", "th": "พัค! หยิบอาร์พีจีนั่น!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28158"}
+{"en": "Park, do not engage!", "th": "พัค อย่าเพิ่งยิง!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28216"}
+{"en": "Park, get behind me.", "th": "พัค มาหลบหลังฉัน", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28233"}
+{"en": "Get us closer, Park!", "th": "พาเราเข้าไปใกล้อีก พัค!", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28240"}
+{"en": "That’s a miss, Park.", "th": "ยิงพลาดแล้ว พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28253"}
+{"en": "Clear to fire, Park.", "th": "ยิงได้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28322"}
+{"en": "Keep it tight, Park.", "th": "เกาะกลุ่มไว้ พัค", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28329"}
+{"en": "Oh yeah, good memory.", "th": "อ้อ ใช่ จำแม่นนี่", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "28901"}
+{"en": "You guys eat this shit?", "th": "พวกนายกินไอ้นี่กันด้วยเหรอ?", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "29775"}
+{"en": "Park, we’re checking out.", "th": "พัค เรากำลังจะจ่ายเงินแล้ว", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "30276"}
+{"en": "We're supposed to get something else, right?", "th": "เราต้องซื้ออย่างอื่นด้วยใช่ไหม?", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "34867"}
+{"en": "Park- quit being weird with the customers, dude.", "th": "พัค เลิกทำตัวแปลก ๆ ใส่ลูกค้าได้แล้วเพื่อน", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "35418"}
+{"en": "Yeah, you got that right. Buddy’s gonna be stuck on the latrine for at least a week.", "th": "เออ ถูกเลย หมอนั่นคงติดอยู่ในส้วมอย่างน้อยอาทิตย์หนึ่ง", "status": "draft", "origin": "manual_plain_dialogue_alpha2", "source": "37370"}
+{"en": "Pvt. Cho", "th": "พลทหารโช", "render": "ui", "status": "draft", "origin": "thai_speaker_name", "source": "speaker_names_th.json"}
+{"en": "Private Cho", "th": "พลทหารโช", "render": "ui", "status": "draft", "origin": "thai_speaker_name", "source": "speaker_names_th.json"}
