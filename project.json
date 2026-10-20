@@ -1,0 +1,14 @@
+{
+  "name": "call-of-duty-mw4-thai-by-akie",
+  "display_name": "Call of Duty MW4 Thai by AKIE",
+  "author": "AKIE",
+  "version": "0.1.0-alpha.1",
+  "status": "Work in progress",
+  "campaign_complete": false,
+  "in_game_verified": false,
+  "upstream": "https://github.com/e3ang/call-of-duty-mw4-persian-farsi",
+  "runtime_hashes": {
+    "bink2w64.dll": "6a58f884a8ff7355143c828d7c2badd3a1ec29fd38eccf4de3a3f5ea6055291e",
+    "trhook.dll": "294479490adbc552e0098939c1b07dbf548cc337fa8cd60824680695d283dca7"
+  }
+}
