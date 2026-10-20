@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
-from build import build_stub, read_rows, validate
+from build import build_stub, encode, read_rows, validate
 
 META = json.loads((ROOT / 'project.json').read_text(encoding='utf-8'))
 DATA_ZIP = ROOT / 'dist' / f"{META['name']}-{META['version']}-data.zip"
@@ -61,6 +61,16 @@ class PublicBuildTests(unittest.TestCase):
             self.assertEqual(table['Park, think fast!'], 'พัค รับให้ทันนะ!')
             self.assertEqual(table['Cpl. Dunn'], 'สิบโทดันน์')
             self.assertEqual(z.read(PREFIX + 'files/rtlcompanion.dll'), build_stub())
+            probes = json.loads((ROOT / 'reports/visible_checks.json').read_text(encoding='utf-8'))
+            self.assertEqual(probes['count'], len(probes['cases']))
+            for mode in ('normal', 'large', 'largest'):
+                table = pairs(z.read(PREFIX + f'files/trdata2-{mode}.bin'))
+                for probe in probes['cases']:
+                    with self.subTest(size=mode, key=probe['en']):
+                        actual = table[probe['en']]
+                        for prefix in ('^H30^', '^H40^'):
+                            actual = actual.removeprefix(prefix)
+                        self.assertEqual(actual, probe['expected_th'])
 
     def test_public_archives_exclude_imported_or_private_files(self):
         for path in (DATA_ZIP, SOURCE_ZIP):
@@ -213,6 +223,50 @@ class InstallerTests(unittest.TestCase):
         self.uninstall()
         for folder in (self.game, self.sp):
             self.assertTrue(all(not (folder / name).exists() for name in NAMES))
+
+    def test_alpha1_upgrade_keeps_original_files_and_subtitle_size(self):
+        self.prepare()
+        original = {}
+        for folder in (self.game, self.sp):
+            for name in NAMES:
+                original[folder / name] = ('original:' + folder.name + ':' + name).encode('utf-8')
+                (folder / name).write_bytes(original[folder / name])
+        package_path = self.bundle / 'package.json'
+        new_package_bytes = package_path.read_bytes()
+        old = json.loads(new_package_bytes)
+        old['Version'] = '0.1.0-alpha.1'
+        new_tables = {}
+        old_rows = [r for r in read_rows() if r.get('origin') != 'manual_plain_dialogue_alpha2' and r['en'] not in ('Pvt. Cho', 'Private Cho')]
+        for mode, size in (('normal', None), ('large', 30), ('largest', 40)):
+            path = self.bundle / f'files/trdata2-{mode}.bin'
+            new_tables[path] = path.read_bytes()
+            old_bytes = encode(old_rows, size)
+            path.write_bytes(old_bytes)
+            old['Variants'][mode] = sha(old_bytes)
+        default = self.bundle / 'files/trdata2.bin'
+        new_tables[default] = default.read_bytes()
+        default.write_bytes(encode(old_rows, 30))
+        old['Payload']['trdata2.bin'] = sha(default.read_bytes())
+        self.assertNotIn('Oh yeah, good memory.', pairs(default.read_bytes()))
+        package_path.write_text(json.dumps(old), encoding='utf-8')
+        self.install()
+        self.run_ps('installer.ps1', '-Mode', 'resize', '-SubtitleSize', 'largest', '-GamePath', str(self.game))
+        marker = self.sp / 'mw4-thai-install.json'
+        backup = json.loads(marker.read_text(encoding='utf-8-sig'))['BackupDir']
+        package_path.write_bytes(new_package_bytes)
+        for path, data in new_tables.items():
+            path.write_bytes(data)
+        self.run_ps('installer.ps1', '-Mode', 'update', '-GamePath', str(self.game))
+        manifest = json.loads(marker.read_text(encoding='utf-8-sig'))
+        self.assertEqual(manifest['Version'], META['version'])
+        self.assertEqual(manifest['BackupDir'], backup)
+        self.assertEqual(manifest['SubtitleSize'], 'largest')
+        for folder in (self.game, self.sp):
+            data = (folder / 'trdata2.bin').read_bytes()
+            self.assertEqual(data, new_tables[self.bundle / 'files/trdata2-largest.bin'])
+            self.assertEqual(pairs(data)['Oh yeah, good memory.'], '^H40^อ้อ ใช่ จำแม่นนี่')
+        self.uninstall()
+        self.assertTrue(all(path.read_bytes() == data for path, data in original.items()))
 
 
 if __name__ == '__main__':
