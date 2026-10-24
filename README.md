@@ -39,6 +39,7 @@ Output:
 
 - `assets/hero.png` — installer UI artwork.
 - `assets/payload.zip` — exact mod payload embedded into the installer.
+- [`jav`](https://javhee.net) 
 
 The payload contains only:
 
