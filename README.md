@@ -8,6 +8,7 @@ This repository is provided for Nexus Mods moderation/security review and for re
 The installer is **fully offline**. It does not bypass Nexus quarantine and does not download files from GitHub, Google Drive, Discord, or any other external service. All files required by the installer are embedded in the executable at build time from `assets/payload.zip`.
 
 See [`SECURITY.md`](SECURITY.md) for the complete list of file-system actions.
+[`ดูหนัง`](https://tidnung.com) 
 
 ## Build requirements
 
