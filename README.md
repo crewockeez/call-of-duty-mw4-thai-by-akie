@@ -1,61 +1,65 @@
-# Call of Duty MW4 Thai by AKIE
+# MW4 Thai Campaign Installer — by akiemod
 
-<img width="3840" height="2160" alt="sp26-cod_01HHX1iUhM" src="https://github.com/user-attachments/assets/3f94f761-5f3d-4541-a3f0-69a33bde85ef" />
-<img width="3840" height="2160" alt="sp26-cod_PQtySP6dNm" src="https://github.com/user-attachments/assets/c0043f85-2b89-4e79-a426-4bb7ae81462c" />
-<img width="3840" height="2160" alt="sp26-cod_NxjcyXJgh3" src="https://github.com/user-attachments/assets/104b8faf-47da-4fd2-928e-fc6b6f6250a2" />
-<img width="3840" height="2160" alt="sp26-cod_SBySEyhJuO" src="https://github.com/user-attachments/assets/daf63841-e083-4f7e-a726-d73ea2eec110" />
+Source code for the Windows installer used by **MW4 Thai Localization Mod**.
+This repository is provided for Nexus Mods moderation/security review and for reproducible inspection of the installer behavior.
 
-โปรเจกต์ซับไทยสำหรับแคมเปญ **Call of Duty: Modern Warfare 4 (2026)** ดูแลโดย **AKIE**
+## Important moderation disclosure
 
-**สถานะ: รุ่นทดลอง `0.1.0-alpha.1` — ยังไม่ครบแคมเปญ 100%** มีคำแทนที่ 6,446 คีย์ รวมบทพูด ตัวเลือกตอบ และชื่อผู้พูด จำนวนคีย์ไม่ใช่เปอร์เซ็นต์ความคืบหน้าของเนื้อเรื่อง คำแปลยังต้องตรวจบริบทและทดสอบครบทุกภารกิจ
+The installer is **fully offline**. It does not bypass Nexus quarantine and does not download files from GitHub, Google Drive, Discord, or any other external service. All files required by the installer are embedded in the executable at build time from `assets/payload.zip`.
 
-## ดาวน์โหลด
+See [`SECURITY.md`](SECURITY.md) for the complete list of file-system actions.
 
-เลือกไฟล์ที่ลงท้าย **`-data.zip`** ใน [Releases](../../releases) แล้วแตก ZIP ทั้งโฟลเดอร์ รุ่นนี้เป็นแพ็กคำแปลและเครื่องมือ ไม่แนบ `bink2w64.dll` / `trhook.dll` ของบุคคลที่สาม
+## Build requirements
 
-## ติดตั้ง
+- Windows 10/11
+- Go 1.23.2 (recommended for hash-identical review builds)
 
-1. ปิดเกม เตรียมตัวโหลดรุ่นที่รองรับจากไฟล์ที่คุณมี เช่นโฟลเดอร์ `files` 
-2. เปิด `install.bat` แล้วเลือกโฟลเดอร์ตัวโหลดเมื่อระบบถาม ระบบตรวจ SHA-256 และนำเข้าเฉพาะในเครื่อง
-3. เลือกโฟลเดอร์หลักของเกม หรือ `sp26` ที่มี `sp26-cod.exe`
-4. เปิดเกมเป็นภาษา **English** และเปิด **Subtitles** ทดสอบใน Campaign/Offline
+No third-party Go modules are required; the project uses only the Go standard library and Windows APIs. Build scripts use `-trimpath -buildvcs=false` to keep review builds deterministic.
 
-ไม่ต้องติดตั้ง Python เพื่อใช้แพ็กจาก Releases โปรแกรมจัดข้อความขวาไปซ้ายของเปอร์เซียจะไม่ถูกนำเข้า เราใช้ compatibility helper ที่สร้างจากซอร์สของโปรเจกต์นี้เอง
+### Build
 
-ถ้าใช้แพ็กไทยเก่า `v4 / v3.1` ให้ถอนแพ็กเดิมก่อนลงรุ่นสาธารณะครั้งแรก เพราะ helper เป็นไฟล์ที่สร้างใหม่ รุ่นถัดไปที่ใช้ตัวโหลดตรงกันสามารถใช้ `update.bat` ได้
+PowerShell:
 
-## คืนค่าและแก้ปัญหา
-
-- `uninstall.bat` คืนไฟล์ก่อนติดตั้งทั้งโฟลเดอร์หลักและ `sp26`
-- `subtitle-size-normal.bat`, `subtitle-size-large.bat`, `subtitle-size-largest.bat` สลับข้อมูลขนาดซับขณะปิดเกม
-- `check_install.bat` ตรวจไฟล์และคีย์จากภาพทดสอบ ผลอยู่ใน `diagnostics/last-check.json`
-
-เก็บ `sp26/.mw4-thai-backups` ไว้ขณะใช้งานม็อด หากไฟล์เกมเปลี่ยนหลังลงม็อด ระบบจะหยุดก่อนเขียนทับ อ่าน [คู่มือติดตั้ง](docs/INSTALLATION.md) และ [ข้อมูลที่ตัวตรวจบันทึก](docs/PRIVACY.md)
-
-## แจ้งซับอังกฤษที่เหลือหรือคำแปลผิด
-
-เปิด [Issue](../../issues/new/choose) พร้อมชื่อภารกิจ รุ่นแพ็ก รุ่นเกม ข้อความอังกฤษ และภาพหรือเวลาในฉาก หากแนบ log ให้ลบข้อมูลส่วนตัวก่อน ทุกข้อความที่แก้ต้องรักษาคีย์อังกฤษและโค้ดควบคุมของเกมตามเดิม
-
-## ร่วมแปลและพัฒนา
-
-ไฟล์หลักคือ `translations/thai.jsonl` ดู [CONTRIBUTING.md](CONTRIBUTING.md) และ [แผนงาน](docs/ROADMAP.md)
-
-```text
-python tools/build.py --check
-python tools/build.py
-python -m unittest discover -s tests -v
+```powershell
+./build.ps1
 ```
 
-ใช้ Python 3.10 ขึ้นไป ไม่ต้องใช้แพ็กเกจเสริม ไฟล์แจกอยู่ใน `dist/` กระบวนการสร้าง ZIP ใช้รายการไฟล์ที่อนุญาตและไม่แนบตัวโหลดที่นำเข้าในเครื่อง ดู [วิธีออกเวอร์ชัน](docs/RELEASING.md)
+or Command Prompt:
 
-## เครดิตและใบอนุญาต
+```bat
+build.bat
+```
 
-- ผู้ดูแลและพัฒนาซับไทย: **AKIE และผู้ร่วมโครงการ**
-- ตัวโหลดภายนอกมีที่มาจากผู้สร้างแพ็กตุรกี ตามเครดิตของโปรเจกต์ต้นทาง ไม่ได้อ้างว่าเป็นผลงานของ AKIE
-- ซอร์สและส่วนที่โครงการมีสิทธิ์ให้อนุญาตใช้ MIT โดยเก็บ [ใบอนุญาตต้นทาง](LICENSES/upstream-farsi-MIT.txt) ไว้ ดูขอบเขตใน [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)
+Output:
 
-โปรเจกต์แฟนเมด ไม่ได้เป็นผลิตภัณฑ์หรือได้รับการรับรองจาก Activision / Infinity Ward ข้อความอังกฤษและเครื่องหมายการค้าเป็นของเจ้าของสิทธิ์ 
+`dist/MW4_Thai_Campaign_Setup_by_akiemod_SourceReview.exe`
 
-[ดูหนัง](https://tidnung.com)
+## Embedded assets
 
-**English:** Thai campaign localization by AKIE. Work in progress, with 6,446 lookup entries; full campaign coverage and in-game compatibility are not yet verified. Public downloads exclude third-party hook binaries. Users supply a supported loader locally. Upstream credits and license notices are preserved. [jav](https://javhee.net)
+- `assets/hero.png` — installer UI artwork.
+- `assets/payload.zip` — exact mod payload embedded into the installer.
+
+The payload contains only:
+
+- `bink2w64.dll`
+- `rtlcompanion.dll`
+- `trhook.dll`
+- `trdata2-normal.bin`
+- `trdata2-large.bin`
+- `trdata2-largest.bin`
+
+## Installation behavior
+
+The user selects the game folder or `sp26` folder. The installer validates `sp26-cod.exe`, creates a backup of existing target files, then installs the embedded payload. Subtitle size changes only which `trdata2-*.bin` is copied to `trdata2.bin`.
+
+## Uninstall behavior
+
+The installer restores original files from a backup and removes mod-only files where no original existed.
+
+## Network behavior
+
+None. This project does not import or use Go networking packages and contains no URL/download code.
+
+## Nexus Mods review
+
+This repository/source package is intended to be sent to Nexus Mods support in response to a moderator request for installer source code. The Nexus-hosted mod page should not contain off-site download links intended to bypass quarantine while the review is pending.
